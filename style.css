@@ -1,3 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* clasifiacion de clases para cada seccion  */
+
+/* inicio estilo de header */
+.header__contenedor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1000;
+}
+
+.header__contenedor.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
 .leNav {
     font-size: 1.9rem;
 }
@@ -47,6 +74,10 @@
     gap: 2rem;
 }
 
+/* fin estilo de header */
+
+/* inicio estilo de resumen */
+
 .section__resumen {
     color: white;
     display: flex;
@@ -78,7 +109,7 @@
 
 .section__resumen-text__p {
     width: 70vh;
-    text-align: justify;
+    text-align: left;
 }
 
 .section__resume-flecha {
@@ -89,59 +120,104 @@
     animation: rebote 5s ease 0s infinite normal forwards;
 }
 
-.section__proyectos {
-    height: 100vh;
-    background-color: #262626;
+/* fin estilo de resumen */
 
+/* inicio estilo de proyectos */
+
+.section__proyectos {
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: #262626;
+    color: white;
+    align-items: center;
+    padding: 8vh 0;
+}
+
+.section__proyectos>h2 {
+    font-size: 5rem;
 }
 
 .section__proyectos-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
+    margin: 5vh 0;
+    gap: 5rem;
 }
 
 .section__proyectos-card {
-    width: 60vh;
+    width: 50vh;
     background-color: #131313;
     color: white;
     padding: 3rem;
     text-align: justify;
     border-radius: 2rem;
+    transition: transform 300ms ease-out;
 }
 
-.section__proyectos-card img {
+.section__proyectos-card__data {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem 0;
+    justify-self: end;
+
+}
+
+.section__proyectos-card:hover {
+    box-shadow: -9px 10px 17px 0px rgba(13, 13, 13, 0.53);
+    transform: translate(0px, -14px);
+}
+
+.section__proyectos-card__data h3 {
+    font-size: 4rem;
+}
+
+.section__proyectos-card__data p {
+    font-size: 1.5rem;
+    height: 8rem;
+}
+
+
+.section__proyectos-card>img {
     width: 100%;
     border-radius: 1rem;
+    height: 60%;
 }
 
 .proyectos__container-card__click {
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
+    align-items: end;
+
 }
 
 .boton__azul {
-    box-shadow: inset 0px -3px 7px 0px #9fb4f2;
-    background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
-    background-color: #7892c2;
-    border-radius: 3px;
-    border: 1px solid #4e6096;
-    display: inline-block;
-    color: #ffffff;
-    font-family: Arial;
     font-size: 15px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #283966;
+    font-family: Arial;
+    width: 120px;
+    height: 50px;
+    border-width: 2px;
+    color: #262626;
+    border-color: #dcdcdc;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    text-shadow: inset 0px 1px 0px #ffffff;
+    background: linear-gradient(#ffffff, #f6f6f6);
 }
 
 .boton__azul:hover {
-    background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-    background-color: #476e9e;
+    background: linear-gradient(#9f9f9f, #f5f5f5);
 }
 
 #logo__git {
     width: 5vh;
+
 }
 
 @media (max-width: 1560px) {

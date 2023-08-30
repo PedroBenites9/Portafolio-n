@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header__contenedor">
         <nav class="navbar bg-transparent fixed-top navbar-expand-lg  leNav" data-bs-theme="dark">
             <div class=" container-fluid justify-content-evenly">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,8 +23,8 @@
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
                     <div class="navbar-nav text-center">
                         <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#pagina2">Resumen</a>
-                        <a class="nav-link" href="#">Portafolio</a>
+                        <a class="nav-link" href="#section-resumen">Resumen</a>
+                        <a class="nav-link" href="#section-proyectos">Portafolio</a>
                     </div>
                 </div>
             </div>
@@ -37,9 +37,10 @@
                     <img src="./assets/nombre.png" alt="nombre" class="imagen__nombre" data-aos="fade-right"
                         data-aos-duration="2000">
                     <div class="section__botones-content" data-aos="fade-right" data-aos-duration="2000">
-                        <button type="button" onclick="location.href='#pagina2'"
+                        <button type="button" onclick="location.href='#section-resumen'"
                             class="btn btn-outline-light btn-lg botones">Resumen</button>
-                        <button type="button" class="btn btn-outline-light btn-lg botones">Portafolio</button>
+                        <button type="button" class="btn btn-outline-light btn-lg botones"
+                            onclick="location.href='#section-proyectos'">Portafolio</button>
                     </div>
                     <div class="section__fondo-iconos" data-aos="fade-up" data-aos-duration="2000">
                         <a class="links" href="https://www.facebook.com/Pedro.Benites99/"><img class="iconos"
@@ -53,7 +54,7 @@
             </div>
 
         </section>
-        <section id="pagina2" class="section__resumen">
+        <section id="section-resumen" class="section__resumen">
             <div class="section__resumen-text">
                 <div>
                     <h3 class="section__resumen-text__title"><span class="typed"></span></h3>
@@ -74,17 +75,33 @@
                 <img src="assets/flecha.png" alt="flecha" class="section__resume-flecha">
             </div>
         </section>
-        <section class="section__proyectos">
-            <h2>seccion de Proyectos</h2>
+        <section id="section-proyectos" class="section__proyectos">
+            <h2>Seccion de Proyectos</h2>
             <div class="section__proyectos-container">
-                <div href="#xd" class="section__proyectos-card">
+                <div class="section__proyectos-card">
+                    <img id="imagen__portafolio" src="./assets/portafolio-recortado.png" alt="EstacionOceanica">
+                    <div class="section__proyectos-card__data">
+                        <h3>Portafolio</h3>
+                        <p>Este es el portafolio que estas viendo en estos momentos jeje
+                        </p>
+                    </div>
+                    <div class="proyectos__container-card__click">
+                        <a href="https://github.com/PedroBenites9/Portafolio-n">
+                            <img src="assets/github-icon.png" alt="githubIcon" id="logo__git">
+                        </a>
+                        <button onclick="alert('Es en serio?')" } class="boton__azul">Hecha un vistazo!</button>
+                    </div>
+                </div>
+                <div class="section__proyectos-card">
 
                     <img src="https://www.visionsustentable.com/wp-content/uploads/2021/11/estacion-oceanica.jpg"
                         alt="EstacionOceanica">
-                    <h3>Estacion Oceanica</h3>
-                    <p>Estacion Oceanica, un espacio para aprender todo sobre los mares de una manera educativa y
-                        atractiva, donde encontraras un museo, realida virtual y un simulador de submarino!
-                    </p>
+                    <div class="section__proyectos-card__data">
+                        <h3>Estacion Oceanica</h3>
+                        <p>Estacion Oceanica, un espacio para aprender todo sobre los mares de una manera educativa y
+                            atractiva, donde encontraras un museo, realida virtual y un simulador de submarino!
+                        </p>
+                    </div>
                     <div class="proyectos__container-card__click">
                         <a href="https://github.com/PedroBenites9/estacionOceanica-pedroBenites">
                             <img src="assets/github-icon.png" alt="githubIcon" id="logo__git">
@@ -93,6 +110,7 @@
                             } class="boton__azul">Hecha un vistazo!</button>
                     </div>
                 </div>
+
             </div>
         </section>
         <footer>
