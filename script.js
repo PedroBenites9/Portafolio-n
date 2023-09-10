@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
     prevScrollPos = window.scrollY;
 
     if (!scrolling) {
-        header.classList.add('hidden');
+        header.classList.add('hidden'); //en chatGPT  genero en header.classList.remove en vez de .add, esto daba la animacion inversa (cuando se scrolleaba aparecia el header y cuando parabamos de scrolliar desaparecia el header) 
         scrolling = true;
     }
 
@@ -42,5 +42,5 @@ window.addEventListener('scroll', () => {
             header.classList.remove('hidden');
             scrolling = false;
         }
-    }, 200); // Cambia el valor para ajustar el tiempo de espera después del scroll
+    }, 400); // Cambia el valor para ajustar el tiempo de espera después del scroll
 });
