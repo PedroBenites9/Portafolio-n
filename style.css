@@ -12,7 +12,7 @@ html {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 3rem;
+    padding: .5rem;
     text-align: center;
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: translateY(0);
@@ -32,7 +32,6 @@ html {
 /* fin estilo de header */
 
 /* inicio estilo de resumen */
-
 
 .section__fondo-home {
     background-image: url("./assets/fondoPortafolio2.png");
@@ -79,9 +78,6 @@ html {
     gap: 2rem;
 }
 
-
-
-
 .section__resumen {
     color: white;
     display: flex;
@@ -90,7 +86,9 @@ html {
     align-items: center;
     /* background-color: #1f2022fb ; */
     background-color: #0c0c0c;
-    height: 100vh;
+    /* height: 100vh; */
+    padding: 10rem 0;
+    gap: 10rem;
 }
 
 .imagen__perfil {
@@ -135,14 +133,23 @@ html {
     list-style: none;
 }
 
+.timeLine__data {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+}
+
 .linea-v {
     position: absolute;
     height: 20vh;
     width: .5vw;
     border-width: 0;
     color: #000;
-    background-color: #000;
+    background-color: #9f9f9f;
 }
+
+.misGustos {}
+
 
 /* fin estilo de resumen */
 
@@ -220,8 +227,8 @@ html {
 .boton__azul {
     font-size: 15px;
     font-family: Arial;
-    width: 120px;
-    height: 50px;
+    width: 110px;
+    height: 5px;
     border-width: 2px;
     color: #262626;
     border-color: #dcdcdc;
@@ -233,6 +240,9 @@ html {
     box-shadow: inset 0px 1px 0px 0px #ffffff;
     text-shadow: inset 0px 1px 0px #ffffff;
     background: linear-gradient(#ffffff, #f6f6f6);
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem;
 }
 
 .boton__azul:hover {
