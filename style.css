@@ -265,6 +265,7 @@ html {
     text-decoration: none;
     text-align: center;
     padding: .9rem;
+    cursor: pointer;
 }
 
 .boton__azul:hover {
@@ -279,6 +280,62 @@ html {
 /* fin estilo de proyectos */
 
 /* inicio estilo de footer */
+footer {
+    background-color: #1d1d1d;
+    color: #141414;
+    font-size: 5rem;
+}
+
+.footer__links {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    gap: 10rem;
+    justify-content: center;
+}
+
+i {
+    color: #141414;
+    transition: color 1s ease 0s;
+}
+
+.fa-github:hover {
+    color: white;
+}
+
+.fa-instagram {
+    background: -webkit-radial-gradient(33% 100% circle, #141414 20%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #141414 20%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    backdrop-filter: 1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 900%;
+    background-position: 29% 100%;
+    transition: background-position 1s;
+}
+
+.fa-instagram:hover,
+.fa-github:focus {
+    background-position: 1% 1%;
+}
+
+.fa-square-facebook {
+    background: -webkit-radial-gradient(circle, #141414 20%, #2a54ad);
+    backdrop-filter: 1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 800%;
+    background-position: 49% 100%;
+    transition: background-position 1s;
+}
+
+.fa-square-facebook:hover {
+    background-position: 1% 1%;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
 
 
 /* fin estilo de footer */
@@ -286,6 +343,15 @@ html {
 @media (max-width: 1560px) {
     .section__botones-content {
         bottom: 25rem;
+    }
+
+    .linea-v {
+        position: absolute;
+        height: 30vh;
+        width: .5vw;
+        border-width: 0;
+        color: #000;
+        background-color: #9f9f9f;
     }
 }
 
