@@ -110,7 +110,7 @@ a:active {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 8rem;
 }
 
 .section__resumen-text__title {
@@ -143,15 +143,25 @@ a:active {
     list-style: none;
 }
 
+.li__timeLine {
+    display: grid;
+    grid-template-columns: 8vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* 
 .timeLine__data {
     display: flex;
     flex-flow: row nowrap;
-    gap: 2rem;
+    gap: 5rem;
 }
+ */
+
 
 .linea-v {
     position: absolute;
-    height: 20vh;
+    height: 23vh;
     width: .5vw;
     border-width: 0;
     color: #000;
@@ -425,7 +435,7 @@ i {
 
     .linea-v {
         position: absolute;
-        height: 30vh;
+        max-height: 100%;
         width: .5vw;
         border-width: 0;
         color: #000;
@@ -438,6 +448,9 @@ i {
         background-color: pink;
     }
 }
+
+
+
 
 @keyframes rebote {
 
