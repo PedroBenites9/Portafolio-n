@@ -2,6 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
 /* clasifiacion de clases para cada seccion  */
 
 /* inicio estilo de header */
@@ -121,6 +127,10 @@ html {
     padding: 1rem;
 }
 
+.section__resumen-text-timeline {
+    margin: 5rem 0;
+}
+
 .section__resume-flecha {
     position: relative;
     top: 5rem;
@@ -171,6 +181,11 @@ html {
 
 .slider .slide img {
     width: 100%;
+}
+
+#title__bio {
+    font-size: xx-large;
+    margin: 2rem 0;
 }
 
 /* fin estilo de resumen */
@@ -284,6 +299,7 @@ footer {
     background-color: #1d1d1d;
     color: #141414;
     font-size: 5rem;
+    padding: 5rem 5rem;
 }
 
 .footer__links {
@@ -292,7 +308,10 @@ footer {
     list-style: none;
     gap: 10rem;
     justify-content: center;
+    margin: 2rem;
+
 }
+
 
 i {
     color: #141414;
@@ -337,6 +356,17 @@ i {
     color: #0077b5;
 }
 
+.footer__contactos {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    font-size: xx-large;
+    margin: 5rem;
+    color: #f5f5f5;
+}
+
+
+
 /* fin estilo de footer */
 
 /* go top */
@@ -353,7 +383,7 @@ i {
 .go-top-button {
     width: 0rem;
     height: 0rem;
-    background: #2071b2;
+    background: #b3b3b3;
     cursor: pointer;
     border-radius: 50%;
     top: 50%;
@@ -368,7 +398,7 @@ i {
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    color: #fff;
+    color: #000;
     transition: .2s;
 }
 
