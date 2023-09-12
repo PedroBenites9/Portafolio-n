@@ -1,9 +1,12 @@
-
+// script de animacion maquina de escribir
 const typed = new Typed('.typed', {
     strings: ['Es un placer conocerte :)'],
     typeSpeed: 90,
     startDelay: 500
 });
+
+
+// script de animacion para ocultar el nav
 
 // const header = document.querySelector('.header__contenedor');
 // let prevScrollPos = window.scrollY;
@@ -44,3 +47,21 @@ window.addEventListener('scroll', () => {
         }
     }, 400); // Cambia el valor para ajustar el tiempo de espera después del scroll
 });
+
+
+// script boton pop-up
+
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 100) {
+        document.querySelector(".go-top-container").classList.add("show")
+    } else {
+        document.querySelector(".go-top-container").classList.remove("show")
+    }
+}
+
+document.querySelector('.go-top-container').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+})
