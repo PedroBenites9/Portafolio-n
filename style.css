@@ -98,7 +98,7 @@
     }
 
     .imagen__perfil {
-        width: 40vh;
+        width: 20vw;
         height: auto;
         border-radius: 20rem;
     }
@@ -107,24 +107,32 @@
         display: flex;
         font-size: 1.8rem;
         width: 90vh;
-        flex-flow: row nowrap;
+        flex-flow: column wrap;
         justify-content: center;
         align-items: center;
         gap: 8rem;
     }
 
+    .section__resumen-1 {
+        display: flex;
+        gap: 6rem;
+        width: 60vw;
+    }
+
     .section__resumen-text__title {
-        font-size: 4rem;
+        font-size: 6rem;
         padding: 1em 0;
         text-align: center;
     }
 
     .section__resumen-text__p {
-        width: 70vh;
+        width: 50vw;
         text-align: left;
         background-color: #131313;
         border-radius: 2rem;
         padding: 1rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .section__resumen-text-timeline {
@@ -161,7 +169,7 @@
 
     .linea-v {
         position: absolute;
-        height: 23vh;
+        height: 24vh;
         width: .5vw;
         border-width: 0;
         color: #000;
@@ -252,7 +260,7 @@
     }
 
     .section__proyectos-card__data p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         height: 8rem;
     }
 
@@ -452,10 +460,11 @@
         .section__fondo-home {
             display: flex;
             flex-flow: column wrap;
+            height: 100vh;
         }
 
         .section__fondo-iconos {
-            bottom: 5rem;
+            bottom: 10rem;
             right: 10rem;
         }
 
@@ -478,19 +487,58 @@
             font-size: 3.5rem;
         }
 
-        .section__resumen-text__p {
-            font-size: 1.8rem;
+        .section__resumen {
+            padding: 3rem 0;
         }
 
         .section__resumen-text {
             display: flex;
-            flex-flow: row nowrap;
-            gap: 2rem;
+            flex-flow: column nowrap;
+            width: 90vw;
+            gap: 0;
+        }
+
+        .section__resumen-text__title {
+            padding: 4rem 0;
+        }
+
+        .section__resumen-text__p {
+            font-size: 1.8rem;
+            padding: 2rem;
+            width: 75vw;
+        }
+
+        .section__resumen-text-contenedor {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+
+        .section__resumen-1 {
+            width: 80vw;
+        }
+
+        .section__resumen-2 {
+            align-self: flex-end;
+            margin-bottom: 9rem;
+        }
+
+        .section__resumen-text-timeline {
+            margin: 1rem 0;
+        }
+
+        .timeLine {
+            padding: 0 1rem;
         }
 
         .timeLine__anio {
             text-align: center;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            width: 10vw;
+        }
+
+        .li__timeLine {
+            gap: 4rem;
         }
 
         .imagen__perfil {
@@ -499,11 +547,56 @@
         }
 
         .linea-v {
-            height: 43vh;
+            height: 50%;
             width: .5vw;
         }
 
+        .section__resumen-text__title {
+            font-size: 4rem;
+        }
+
+        .section__resume-flecha {
+            top: 0;
+        }
+
         /* fin estilo bio */
+
+        /* inicio estilo proyectos */
+        .section__proyectos-container {
+            gap: 3rem;
+        }
+
+        .section__proyectos-card {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40vh repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            width: 43vw;
+            height: auto;
+        }
+
+        .section__proyectos-card>img {
+            height: 90%;
+            width: 100%;
+        }
+
+        .section__proyectos-card__data>p {
+            font-size: 1.6rem;
+        }
+
+        .proyectos__container-card__click {
+            align-items: end;
+        }
+
+        /* fin estilo proyectos */
+        /* inicio estilo footer */
+        .footer__links {
+            gap: 5rem;
+        }
+
+        /* fin estilo foter */
+
     }
 
 
