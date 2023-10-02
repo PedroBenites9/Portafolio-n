@@ -33,23 +33,21 @@
     <main>
         <section>
             <div class="section__fondo-home">
-                <div class="section__fondo2-home">
-                    <img src="./assets/nombre.png" alt="nombre" class="imagen__nombre" data-aos="fade-right"
-                        data-aos-duration="2000">
-                    <div class="section__botones-content" data-aos="fade-right" data-aos-duration="2000">
-                        <button type="button" onclick="location.href='#section-resumen'"
-                            class="btn btn-outline-light btn-lg botones">Biografia</button>
-                        <button type="button" class="btn btn-outline-light btn-lg botones"
-                            onclick="location.href='#section-proyectos'">Portafolio</button>
-                    </div>
-                    <div class="section__fondo-iconos" data-aos="fade-up" data-aos-duration="2000">
-                        <a class="links" href="https://www.facebook.com/Pedro.Benites99/"><img class="iconos"
-                                src="./assets/facebook-1.png" alt="facebook"></a>
-                        <a class="links" href="https://www.instagram.com/_.pepox/"><img class="iconos"
-                                src="./assets/instagram-1.png" alt="instagram"> </a>
-                        <a class="links" href="https://www.linkedin.com/in/pedro-benites99/"><img class="iconos"
-                                src="./assets/linkedin-1.png" alt="linkedin"></a>
-                    </div>
+                <img src="./assets/nombre.png" alt="nombre" class="imagen__nombre" data-aos="fade-right"
+                    data-aos-duration="2000">
+                <div class="section__botones-content" data-aos="fade-right" data-aos-duration="2000">
+                    <button type="button" onclick="location.href='#section-resumen'"
+                        class="btn btn-outline-light btn-lg botones">Biografia</button>
+                    <button type="button" class="btn btn-outline-light btn-lg botones"
+                        onclick="location.href='#section-proyectos'">Portafolio</button>
+                </div>
+                <div class="section__fondo-iconos" data-aos="fade-up" data-aos-duration="2000">
+                    <a class="links" href="https://www.facebook.com/Pedro.Benites99/"><img class="iconos"
+                            src="./assets/facebook-1.png" alt="facebook"></a>
+                    <a class="links" href="https://www.instagram.com/_.pepox/"><img class="iconos"
+                            src="./assets/instagram-1.png" alt="instagram"> </a>
+                    <a class="links" href="https://www.linkedin.com/in/pedro-benites99/"><img class="iconos"
+                            src="./assets/linkedin-1.png" alt="linkedin"></a>
                 </div>
             </div>
 
@@ -66,37 +64,43 @@
                         te
                         mostrare un poco sobre mi y de mis proyectos :p
                     </p>
-                    <div>
-                        <h5>Bio</h5>
-                        <hr class="linea-v" />
-                        <ul class="timeLine">
-                            <li>
-                                <div class="timeLine__data">
-                                    1999
-                                    <p>Naci en Argentina - CABA</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="timeLine__data">
-                                    2013
-                                    <p>Ingrese a la secundaria tecnica en la Escuela tecnica N°32 D.E. 14 "Jose de San
-                                        Martin"</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="timeLine__data">
-                                    2018
+                    <div class="section__resumen-text-timeline">
+                        <h5 id="title__bio">Bio</h5>
+                        <div>
+                            <hr class="linea-v" />
+                            <ul class="timeLine">
+                                <li class="li__timeLine">
+                                    <p class="timeLine__anio">1999</p>
+                                    <p>Naci en CABA - Argentina</p>
+                                </li>
+                                <li class="li__timeLine">
+
+                                    <p class="timeLine__anio">2012</p>
+                                    <p>Ingrese a la secundaria en la Escuela Tecnica N°32 D.E. 14 "José de
+                                        Sán
+                                        Martín"</p>
+                                </li>
+                                <li class="li__timeLine">
+
+                                    <p class="timeLine__anio">2018</p>
                                     <p>Finalice la secundaria como "TECNICO EN
                                         INFORMATICA PROFESIONAL Y PERSONAL EN PROGRAMACIÓN"</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="timeLine__data">
-                                    2022 - actual
+                                </li>
+                                <li class="li__timeLine">
+
+                                    <p class="timeLine__anio">2022-2023</p>
+                                    <p>Trabajé en Estacion Oceanica como anfitrion y personal de mantenimiento</p>
+                                </li>
+                                <li class="li__timeLine">
+
+                                    <p class="timeLine__anio">2022-actual</p>
                                     <p>Freenlance en desarrollador web</p>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section__resumen-text2">
+                        <p></p>
                     </div>
                 </div>
                 <div>
@@ -162,7 +166,7 @@
             <h2>Seccion de Proyectos</h2>
             <div class="section__proyectos-container">
                 <div class="section__proyectos-card">
-                    <img id="imagen__portafolio" src="./assets/portafolio-recortado.png" alt="EstacionOceanica">
+                    <img id="imagen__portafolio" src="./assets/fondoPortafolio2.png" alt="EstacionOceanica">
                     <div class="section__proyectos-card__data">
                         <h3>Portafolio</h3>
                         <p>Este es el portafolio que estas viendo en estos momentos jeje
@@ -181,7 +185,8 @@
                         alt="EstacionOceanica">
                     <div class="section__proyectos-card__data">
                         <h3>Estacion Oceanica</h3>
-                        <p>Estacion Oceanica, un espacio para aprender todo sobre los mares de una manera educativa y
+                        <p>Estacion Oceanica fue mi primer proyecto de desarrollo web. Una simple pagina para una
+                            empresa que enseñan todo sobre los mares de manera educativa y
                             atractiva, donde encontraras un museo, realida virtual y un simulador de submarino!
                         </p>
                     </div>
@@ -193,22 +198,34 @@
                             class="boton__azul">Hecha un vistazo!</a>
                     </div>
                 </div>
-
             </div>
         </section>
+        <div class="go-top-container">
+            <div class="go-top-button">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+        </div>
+        <!-- footer -->
         <footer class="footer__contenedor">
             <ul class="footer__links">
-                <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/Pedro.Benites99/"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
                 /
-                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/pedro-benites99/"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
                 /
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/_.pepox/"><i class="fa-brands fa-instagram"></i></a></li>
                 /
-                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://github.com/PedroBenites9"><i class="fa-brands fa-github"></i></a></li>
             </ul>
-
+            <div class="footer__contactos">
+                Contactos
+                <p><strong>Celular: </strong> +54 1123344940</p>
+                <p><strong>Correo: </strong> <a
+                        href="mailto:pedro.benites99@hotmail.com?subject=Hola Pedro!">pedro.benites99@hotmail.com</a>
+                </p>
+            </div>
         </footer>
-
     </main>
     <script src="https://kit.fontawesome.com/f968d5b47d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
